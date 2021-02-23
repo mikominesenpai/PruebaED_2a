@@ -80,7 +80,6 @@ class CursoTest {
 
 	@Test
 	final void testEstaRegistrado() {
-		c.aniadirAlumno(p);
 		assertEquals(c.estaRegistrado("12312312P"), true);
 	}
 
@@ -91,7 +90,8 @@ class CursoTest {
 
 	@Test
 	final void testNumeroAlumnos() {
-		fail("Not yet implemented"); // TODO
+		assertEquals(c.numeroAlumnos(), 1);
+		
 	}
 
 	@Test
