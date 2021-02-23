@@ -10,6 +10,7 @@ import ed.examen.modelo.Persona;
 class CursoTest {
 
 	Curso c= new Curso();
+	Persona p = new Persona("12312312P","Pepe","Paco"); 
 	
 	@Test
 	void testEliminarAlumno() {
@@ -62,8 +63,7 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		/*Crear persona para meter en el metodo*/
-		Persona p = new Persona("1231231231","Pepe","Pepo");
+		
 		int tamanoantes=c.numeroAlumnos();
 		try {
 			c.aniadirAlumno(p);
@@ -80,7 +80,8 @@ class CursoTest {
 
 	@Test
 	final void testEstaRegistrado() {
-		fail("Not yet implemented"); // TODO
+		c.aniadirAlumno(p);
+		assertEquals(c.estaRegistrado("12312312P"), true);
 	}
 
 	@Test
