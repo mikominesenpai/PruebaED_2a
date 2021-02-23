@@ -74,6 +74,12 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	
+	
+	/**
+	 * Metodo que cambia el nombre de la persona
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
