@@ -61,9 +61,22 @@ class CursoTest {
 	}
 
 	@Test
-	final void testAniadirAlumno() {
-		fail("Not yet implemented"); // TODO
+	void testAniadirAlumno() {
+		/*Crear persona para meter en el metodo*/
+		Persona p = new Persona("1231231231","Pepe","Pepo");
+		int tamanoantes=c.numeroAlumnos();
+		try {
+			c.aniadirAlumno(p);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		int tamanodespues=c.numeroAlumnos();
+		assertEquals(tamanoantes, tamanodespues-1);
+		assertEquals("1231231231",p.getDni());
+		assertEquals("Pepe", p.getNombre());
+		assertEquals("Pepo", p.getApellido1());
 	}
+
 
 	@Test
 	final void testEstaRegistrado() {
