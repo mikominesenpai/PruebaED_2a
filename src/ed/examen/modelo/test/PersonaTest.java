@@ -52,7 +52,12 @@ class PersonaTest {
 
 	@Test
 	final void testSetNombre() {
-		fail("Not yet implemented"); // TODO
+		try {
+			p1.setNombre("Paco");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assertEquals("Paco", p1.getNombre());
 	}
 
 	@Test
