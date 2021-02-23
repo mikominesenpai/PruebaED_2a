@@ -32,7 +32,7 @@ class PersonaTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		assertEquals("12312312P", p.getDni());
+		assertEquals("12312312P", p1.getDni());
 		
 		boolean exceptionLanzada=false;
 		try {
