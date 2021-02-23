@@ -40,6 +40,13 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 */
+	
+	
+	/**
+	 * Este metodo comprueba si hay un alumno registrado buscando su dni
+	 * @param dni
+	 * @return true si está registrado
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i = 0;
 		Boolean encontrado = false;
