@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import ed.examen.modelo.Persona;
 
 class PersonaTest {
-    Persona p1= new Persona();
+    Persona p1= new Persona("12312312P","Mario","Lopez");
 	@Test
 	final void testPersonaStringStringString() {
 		fail("Not yet implemented"); // TODO
