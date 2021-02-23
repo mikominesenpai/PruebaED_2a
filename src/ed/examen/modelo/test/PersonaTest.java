@@ -1,5 +1,7 @@
 package ed.examen.modelo.test;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
@@ -10,7 +12,10 @@ class PersonaTest {
     Persona p1= new Persona("12312312P","Mario","Lopez");
 	@Test
 	final void testPersonaStringStringString() {
-		fail("Not yet implemented"); // TODO
+		assertNotNull(p1);
+		assertEquals("12312312P", p1.getDni());
+		assertEquals("Mario", p1.getNombre());
+		assertEquals("Lopez", p1.getApellido1());
 	}
 
 	@Test
