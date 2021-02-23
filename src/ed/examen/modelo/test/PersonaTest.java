@@ -2,6 +2,7 @@ package ed.examen.modelo.test;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
@@ -24,8 +25,24 @@ class PersonaTest {
 	}
 
 	@Test
-	final void testSetDni() {
-		fail("Not yet implemented"); // TODO
+	void testSetDni() {
+		try {
+			p1.setDni("12312312P");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals("12312312P", p.getDni());
+		
+		boolean exceptionLanzada=false;
+		try {
+			p1.setDni("000000000");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			exceptionLanzada=true;
+		}
+		assertTrue(exceptionLanzada);
 	}
 
 	@Test
