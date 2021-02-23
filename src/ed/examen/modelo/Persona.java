@@ -11,6 +11,14 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	
+	
+	/**
+	 * Constructor de la clase Persona
+	 * @param dni
+	 * @param nombre
+	 * @param apellido1
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
