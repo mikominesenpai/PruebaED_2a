@@ -27,12 +27,12 @@ class PersonaTest {
 	@Test
 	void testSetDni() {
 		try {
-			p1.setDni("12312312P");
+			p1.setDni("12312312E");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		assertEquals("12312312P", p1.getDni());
+		assertEquals("12312312E", p1.getDni());
 		
 		boolean exceptionLanzada=false;
 		try {
