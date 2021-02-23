@@ -10,6 +10,12 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 */
+	
+	/**
+	 * Metodo para eliminar una persona del curso
+	 * @param dni
+	 * @throws Exception
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if (dni.length() == 9) {// comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); // solo hace falta el dni
