@@ -28,6 +28,12 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	
+	
+	/**
+	 * Metodo que devuelve el dni de una persona
+	 * @return dni
+	 */
 	public String getDni() {
 		return dni;
 	}
