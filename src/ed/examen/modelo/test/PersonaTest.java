@@ -46,8 +46,8 @@ class PersonaTest {
 	}
 
 	@Test
-	final void testGetNombre() {
-		fail("Not yet implemented"); // TODO
+	void testGetNombre() {
+		assertEquals("Mario", p1.getNombre());
 	}
 
 	@Test
