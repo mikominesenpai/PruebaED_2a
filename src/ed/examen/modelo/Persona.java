@@ -42,6 +42,13 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	
+	
+	/**
+	 * Metodo que declara un nuevo dni para una persona
+	 * @param dni
+	 * @throws Exception
+	 */
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()))) {
