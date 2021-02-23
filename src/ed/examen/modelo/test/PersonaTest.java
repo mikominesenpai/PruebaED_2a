@@ -1,11 +1,13 @@
 package ed.examen.modelo.test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
-class PersonaTest {
+import ed.examen.modelo.Persona;
 
+class PersonaTest {
+    Persona p1= new Persona();
 	@Test
 	final void testPersonaStringStringString() {
 		fail("Not yet implemented"); // TODO
