@@ -61,6 +61,12 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	
+	
+	/**
+	 * Metodo que devuelve el metodo de la persona
+	 * @return el nombre de la persona
+	 */
 	public String getNombre() {
 		return nombre;
 	}
